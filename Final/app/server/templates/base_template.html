@@ -1,0 +1,113 @@
+<!-- 
+  THIS IS A REFERENCE TEMPLATE ONLY
+  The AI should use this as inspiration but MUST create:
+  1. Separate CSS file (styles.css) - NOT inline styles
+  2. Comprehensive CSS (400+ lines) - this template is just showing structure
+  3. All content must be populated with actual user data - NO empty placeholders
+  4. This shows the STRUCTURE but the final output must be MUCH more comprehensive
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Professional portfolio website" />
+  <title>{{NAME}} — Portfolio</title>
+  <!-- IMPORTANT: AI must link to EXTERNAL styles.css file, not inline styles -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Sticky Navigation Header -->
+  <header>
+    <h1>{{NAME}}</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section - Full viewport height with background image -->
+    <section class="hero" id="home">
+      <!-- Hero image as background or featured image -->
+      <img class="hero-img" src="{{HERO_IMAGE}}" alt="Hero background" />
+      <h2>{{TITLE}}</h2>
+      <p>{{TAGLINE}}</p>
+      <a href="#contact" class="cta">Contact Me</a>
+    </section>
+
+    <!-- About Section - Must include user's "about" text -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>{{ABOUT}}</p>
+      <!-- AI can add more paragraphs if needed -->
+    </section>
+
+    <!-- Skills Section - Display ALL user skills as styled chips/badges -->
+    <section id="skills" class="skills">
+      <h2>Skills & Technologies</h2>
+      <ul class="skills-list">
+        <!-- AI must generate one <li> for EACH skill from user's input -->
+        <li>{{SKILL_1}}</li>
+        <li>{{SKILL_2}}</li>
+        <li>{{SKILL_3}}</li>
+        <!-- Add more skills dynamically based on user input -->
+      </ul>
+    </section>
+
+    <!-- Projects Section - CSS Grid layout with project cards -->
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-grid">
+        <!-- Project Card 1 - Must include actual project title and description -->
+        <article class="card">
+          <img src="{{PROJECT_1_IMG}}" alt="Project 1" />
+          <div class="card-body">
+            <h3>{{PROJECT_1_TITLE}}</h3>
+            <p>{{PROJECT_1_DESC}}</p>
+          </div>
+        </article>
+        
+        <!-- Project Card 2 -->
+        <article class="card">
+          <img src="{{PROJECT_2_IMG}}" alt="Project 2" />
+          <div class="card-body">
+            <h3>{{PROJECT_2_TITLE}}</h3>
+            <p>{{PROJECT_2_DESC}}</p>
+          </div>
+        </article>
+        
+        <!-- Project Card 3 -->
+        <article class="card">
+          <img src="{{PROJECT_3_IMG}}" alt="Project 3" />
+          <div class="card-body">
+            <h3>{{PROJECT_3_TITLE}}</h3>
+            <p>{{PROJECT_3_DESC}}</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2>Get In Touch</h2>
+      <p>Email: <a href="mailto:{{EMAIL}}">{{EMAIL}}</a></p>
+      <div class="social-links">
+        <!-- AI can add social media links -->
+        <a href="#" target="_blank" rel="noopener">GitHub</a>
+        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© {{YEAR}} {{NAME}}. All rights reserved.</p>
+  </footer>
+
+  <!-- IMPORTANT: AI must include external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
