@@ -1277,6 +1277,17 @@ REMEMBER: Return ONLY valid JSON that matches the schema. No commentary, no mark
     // Completely replace whatever AI suggested to prevent superhero images
     const title = userData?.title || "professional";
     const tagline = userData?.tagline || "portfolio";
+    
+    // Calculate paletteForAI from userData (same logic as in validateAndEnhanceManifest)
+    const accentInput = userData?.accent || "#22D3EE";
+    const accentPalette = Array.isArray(accentInput)
+      ? accentInput.filter(Boolean)
+      : String(accentInput).split(',').map(s => s.trim()).filter(Boolean);
+    const accent = accentPalette[0] || "#22D3EE";
+    const accentSecondary = accentPalette[1] || accent;
+    const accentTertiary = accentPalette[2] || accentSecondary;
+    const paletteForAI = [accent, accentSecondary, accentTertiary].filter(Boolean);
+    
     const paletteDescriptionForHero = paletteForAI.length ? `with color palette ${paletteForAI.join(", ")}, ` : "";
     const paletteDescriptionForProjects = paletteForAI.length ? `, color palette ${paletteForAI.join(", ")}` : "";
     manifest.assetsNeeded.heroImage = `abstract geometric background pattern, modern professional web design, minimalist style, ${paletteDescriptionForHero}subtle gradients and clean geometric shapes like triangles, circles, polygons, and hexagons, pattern texture, web design aesthetic, portfolio background, professional illustration, NO people, NO characters, NO superhero themes, NO costumes, NO persons, NO human figures, NO masked characters, NO caped figures, abstract only, geometric pattern only`;
