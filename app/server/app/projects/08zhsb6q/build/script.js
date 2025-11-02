@@ -1,1 +1,0 @@
-// Minimal JS for interactivity if needed

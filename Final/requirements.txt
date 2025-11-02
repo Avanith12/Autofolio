@@ -1,6 +1,0 @@
-ES7+ React/Redux snippets
-Prettier
-REST Client (or Thunder Client)
-dotenv
-Error Lens
-Path Intellisense
