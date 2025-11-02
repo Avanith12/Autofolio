@@ -1,1 +1,0 @@
-document.addEventListener('DOMContentLoaded', function() { document.querySelectorAll('a[href^="#"]').forEach(anchor => { anchor.addEventListener('click', function(e) { if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return; e.preventDefault(); document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' }); }); }); });
