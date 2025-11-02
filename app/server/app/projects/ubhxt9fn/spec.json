@@ -1,0 +1,21 @@
+{
+  "siteType": "portfolio",
+  "brand": {
+    "name": "Web Developer",
+    "tagline": "I build fast, human-friendly sites"
+  },
+  "pages": [
+    {
+      "id": "home",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Web Developer",
+          "subtitle": "I build fast, human-friendly sites",
+          "ctaText": "Contact me",
+          "ctaLink": "#contact"
+        }
+      ]
+    }
+  ]
+}

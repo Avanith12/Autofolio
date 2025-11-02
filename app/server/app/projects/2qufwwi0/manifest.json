@@ -1,0 +1,25 @@
+{
+  "site_name": "Sireesha",
+  "files": [
+    {
+      "path": "index.html",
+      "content": "<!doctype html><html><head><meta charset=utf-8><title>Sireesha</title><link rel=stylesheet href=styles.css></head><body><header><h1>Sireesha</h1></header><main><section class=hero><img alt=hero src='{{HERO_IMAGE}}'><h2>Web Developer</h2><p>I built websites</p></section><section id=about><p>Nothing</p></section><section id=skills><h2>Skills</h2><div class=chips><span>Python</span><span>Java</span></div></section><section id=projects><h2>Projects</h2><article><img alt='project 1' src='{{PROJECT_1_IMG}}'><h3>Projects</h3><p>one line</p></article></section><section id=contact><p>example@gmail.com</p></section></main><script src=script.js></script></body></html>"
+    },
+    {
+      "path": "styles.css",
+      "content": ":root { --accent: #b32ebd; } body { font-family: sans-serif; margin: 0; padding: 0; } header { background: var(--accent); color: white; padding: 1rem; text-align: center; } .hero { text-align: center; padding: 2rem; } .hero img { max-width: 100%; height: auto; } #about, #skills, #projects, #contact { padding: 1rem; } .chips { display: flex; gap: 0.5rem; } .chips span { background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 1rem; } article { margin: 1rem 0; } article img { max-width: 100%; height: auto; }"
+    },
+    {
+      "path": "script.js",
+      "content": "// Minimal JS for interactivity if needed"
+    }
+  ],
+  "assetsNeeded": {
+    "heroImage": "dark subtle gradients depth clean",
+    "projectImages": [
+      "project theme 1",
+      "project theme 2",
+      "project theme 3"
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "siteType": "portfolio",
+  "brand": {
+    "name": "DevCraft",
+    "tagline": "Building digital experiences that matter",
+    "palette": [
+      "#2A5C8D",
+      "#4ECDC4",
+      "#FF6B6B"
+    ]
+  },
+  "pages": [
+    {
+      "id": "home",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Modern Web Development",
+          "subtitle": "Clean code, intuitive UX, and pixel-perfect implementation",
+          "ctaText": "View my work",
+          "ctaLink": "#projects"
+        },
+        {
+          "type": "about",
+          "heading": "About Me",
+          "paragraphs": [
+            "Full-stack developer with 5+ years crafting responsive web applications. I specialize in React, Node.js, and accessible design principles.",
+            "Let's turn your ideas into fast, secure, and scalable digital solutions."
+          ]
+        },
+        {
+          "type": "projects",
+          "items": [
+            {
+              "title": "E-commerce Platform",
+              "desc": "Custom React storefront with Stripe integration",
+              "imageKey": "proj1"
+            },
+            {
+              "title": "Task Management App",
+              "desc": "Real-time collaboration tool with Firebase backend",
+              "imageKey": "proj2"
+            },
+            {
+              "title": "Portfolio Builder",
+              "desc": "CMS for creatives with drag-and-drop editing",
+              "imageKey": "proj3"
+            }
+          ]
+        },
+        {
+          "type": "contact",
+          "email": "hello@devcraft.example"
+        }
+      ]
+    }
+  ],
+  "assetsNeeded": {
+    "hero": {
+      "aspect": "1600x900",
+      "style": "clean, modern, high-contrast"
+    },
+    "logo": {
+      "aspect": "512x512",
+      "style": "flat glyph"
+    },
+    "proj1": {
+      "aspect": "1024x768",
+      "style": "screenshot-like"
+    },
+    "proj2": {
+      "aspect": "1024x768",
+      "style": "screenshot-like"
+    },
+    "proj3": {
+      "aspect": "1024x768",
+      "style": "screenshot-like"
+    }
+  }
+}

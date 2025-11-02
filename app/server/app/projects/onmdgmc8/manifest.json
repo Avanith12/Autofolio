@@ -1,0 +1,17 @@
+{
+  "site_name": "Sireesha",
+  "files": [
+    {
+      "path": "index.html",
+      "content": "<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\"><meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><title>Sireesha | Web Developer</title><link rel=\"stylesheet\" href=\"styles.css\"></head><body><header><h1>Sireesha</h1><nav><ul><li><a href=\"#about\">About</a></li><li><a href=\"#skills\">Skills</a></li><li><a href=\"#projects\">Projects</a></li><li><a href=\"#contact\">Contact</a></li></ul></nav></header><main><section class=\"hero\"><h2>Web Developer</h2><p>I build interactive websites</p></section><section id=\"about\"><h2>About Me</h2><p>Master's in computer science student at UMass Boston.</p></section><section id=\"skills\"><h2>Skills</h2><div class=\"chips\"><span>Python</span><span>Java</span><span>JavaScript</span></div></section><section id=\"projects\"><h2>Projects</h2><div class=\"projects-grid\"><article><h3>Netflix like portfolio</h3><p>The website starts with my full name shown just like the Netflix intro with splash screen design.</p></article><article><h3>Portfolio Wireframe</h3><p>Below is the wireframe for this portfolio idea.</p></article></div></section><section id=\"contact\"><h2>Contact</h2><p><a href=\"mailto:example@gmail.com\">example@gmail.com</a></p></section></main><footer><p>&copy; 2023 Sireesha</p></footer><script src=\"script.js\"></script></body></html>"
+    },
+    {
+      "path": "styles.css",
+      "content": ":root { --accent: #b720ee; --text: #333; --light: #f8f8f8; --dark: #222; }\n\n* { box-sizing: border-box; margin: 0; padding: 0; }\nbody { font-family: system-ui, sans-serif; line-height: 1.6; color: var(--text); max-width: 1200px; margin: 0 auto; padding: 0 1rem; }\n\na { color: var(--accent); text-decoration: none; }\na:focus { outline: 2px solid var(--accent); outline-offset: 2px; }\n\nheader { display: flex; justify-content: space-between; align-items: center; padding: 1rem 0; border-bottom: 1px solid #eee; }\nnav ul { display: flex; gap: 1rem; list-style: none; }\n\n.hero { text-align: center; padding: 4rem 0; }\n.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }\n.hero p { font-size: 1.25rem; color: var(--accent); }\n\nsection { padding: 3rem 0; }\nsection h2 { margin-bottom: 1.5rem; font-size: 2rem; color: var(--dark); }\n\n.chips { display: flex; gap: 0.5rem; flex-wrap: wrap; }\n.chips span { background: var(--light); padding: 0.5rem 1rem; border-radius: 2rem; font-size: 0.9rem; }\n\n.projects-grid { display: grid; gap: 2rem; }\narticle { background: var(--light); padding: 1.5rem; border-radius: 0.5rem; }\narticle h3 { margin-bottom: 0.5rem; color: var(--accent); }\n\nfooter { text-align: center; padding: 2rem 0; border-top: 1px solid #eee; margin-top: 2rem; }\n\n@media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; } }\n@media (min-width: 768px) { .projects-grid { grid-template-columns: repeat(2, 1fr); } }"
+    },
+    {
+      "path": "script.js",
+      "content": "// Smooth scrolling for anchor links\ndocument.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {\n  anchor.addEventListener('click', function(e) {\n    e.preventDefault();\n    document.querySelector(this.getAttribute('href')).scrollIntoView({\n      behavior: 'smooth'\n    });\n  });\n});\n\n// Current year for footer\ndocument.querySelector('footer p').innerHTML = `&copy; ${new Date().getFullYear()} Sireesha`;"
+    }
+  ]
+}

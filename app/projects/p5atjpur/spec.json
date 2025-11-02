@@ -1,0 +1,62 @@
+{
+  "siteType": "portfolio",
+  "brand": {
+    "name": "Sireesha",
+    "tagline": "Building clean, fast websites",
+    "palette": [
+      "#111827",
+      "#22D3EE",
+      "#F9FAFB"
+    ]
+  },
+  "pages": [
+    {
+      "id": "home",
+      "sections": [
+        {
+          "type": "hero",
+          "title": "Web Developer & AI Tinkerer",
+          "subtitle": "I build fast, human-friendly sites",
+          "ctaText": "Contact me",
+          "ctaLink": "#contact"
+        },
+        {
+          "type": "about",
+          "heading": "About",
+          "paragraphs": [
+            "I like clean UI, predictable APIs, and coffee."
+          ]
+        },
+        {
+          "type": "projects",
+          "items": [
+            {
+              "title": "Capstone Portal",
+              "desc": "RBAC + MySQL",
+              "imageKey": "proj1"
+            }
+          ]
+        },
+        {
+          "type": "contact",
+          "email": "you@example.com"
+        }
+      ]
+    }
+  ],
+  "assetsNeeded": {
+    "hero": {
+      "aspect": "1600x900",
+      "style": "clean, modern, high-contrast"
+    },
+    "logo": {
+      "aspect": "512x512",
+      "style": "flat glyph logo"
+    },
+    "proj1": {
+      "aspect": "1024x768",
+      "style": "screenshot-like"
+    }
+  },
+  "userPrompt": "Build a portfolio website for a web developer\n"
+}

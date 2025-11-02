@@ -1,0 +1,1 @@
+// Minimal JavaScript for interactive elements

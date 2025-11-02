@@ -1,0 +1,156 @@
+/* Basic Reset & Mobile-First Defaults */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #22D3EE; /* Accent color */
+}
+
+main {
+  padding: 1rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 2rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+section:last-of-type {
+  border-bottom: none;
+}
+
+h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: #333;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Hero section */
+.hero {
+  text-align: center;
+  padding: 3rem 0;
+  background-color: #fff;
+}
+
+.hero img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #22D3EE; /* Accent color */
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0;
+}
+
+/* Projects section */
+#projects article {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+  text-align: center; /* Center content for mobile */
+}
+
+#projects article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* Contact section */
+#contact p {
+  text-align: center;
+  font-size: 1.1rem;
+}
+
+#contact p a {
+  color: #22D3EE; /* Accent color */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact p a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 2.8rem;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+  }
+
+  #projects article {
+    text-align: left; /* Align content left for desktop */
+  }
+
+  main {
+    padding: 2rem 3rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  header {
+    padding: 1.5rem 0;
+  }
+  main {
+    padding: 2rem 0;
+  }
+}

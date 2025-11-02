@@ -1,0 +1,25 @@
+{
+  "site_name": "Sireesha",
+  "files": [
+    {
+      "path": "index.html",
+      "content": "<!doctype html><html><head><meta charset=utf-8><title>Sireesha</title></head>\n<body>\n<header><h1>Sireesha</h1></header>\n<main>\n  <section class=\"hero\"><img src=\"{{HERO_IMAGE}}\" alt=\"hero\"><h2>Web Debeloprt</h2><p>dfjaejgfbnfdmnc vdkfnd</p></section>\n  <section id=\"projects\">\n    <article><img src=\"{{PROJECT_1_IMG}}\" alt=\"p1\"><h3>,vmdfkjbiefjkvm ndfkgmefd mc</h3><p>ngdhhfsdjyheridkn cdchffsdn, uhbhdjm hdb kjshbfsd cfd fbvcb hbvdffbjdfcx nmxcbkdhyuedhvsdbvkjsdnc sddhbsdkvfhjvk.fd</p></article>\n    <article><img src=\"{{PROJECT_2_IMG}}\" alt=\"p2\"><h3>Project 2 Title</h3><p>Project 2 Description</p></article>\n    <article><img src=\"{{PROJECT_3_IMG}}\" alt=\"p3\"><h3>Project 3 Title</h3><p>Project 3 Description</p></article>\n  </section>\n</main>\n</body></html>"
+    },
+    {
+      "path": "styles.css",
+      "content": "body { font-family: sans-serif; margin: 0; }\nheader { background-color: #f0f0f0; padding: 1em; text-align: center; }\nmain { padding: 1em; }\n.hero { text-align: center; margin-bottom: 2em; }\n.hero img { max-width: 100%; height: auto; }\n#projects { display: flex; flex-wrap: wrap; justify-content: space-around; }\n#projects article { width: 30%; margin-bottom: 1em; border: 1px solid #ddd; padding: 0.5em; box-sizing: border-box;}\n#projects img { max-width: 100%; height: auto; }\n@media (max-width: 768px) {\n  #projects article { width: 100%; }\n}\n"
+    },
+    {
+      "path": "script.js",
+      "content": "// No JavaScript needed for this static site"
+    }
+  ],
+  "assetsNeeded": {
+    "heroImage": "light geometric triangles, neutral gray, web hero background, no people, no text.",
+    "projectImages": [
+      "clean product/UI mockups on neutral background, no people, no neon.",
+      "clean product/UI mockups on neutral background, no people, no neon.",
+      "clean product/UI mockups on neutral background, no people, no neon."
+    ]
+  }
+}
