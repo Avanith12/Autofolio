@@ -146,3 +146,15 @@ Autofolio/
 │   └── requirements.txt
 └── README.md
 ```
+
+## Team
+
+**Team Name:** Brainy Brunch
+
+**Team Members:**
+- Sireesha
+- Avanith
+- Sumedha
+- Pranathi
+- Ila
+- Rami
