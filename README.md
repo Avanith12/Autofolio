@@ -53,6 +53,20 @@ npm run dev
 
 Server runs on `http://localhost:8787`, client on `http://localhost:5173`.
 
+## Features
+
+Generated portfolios include:
+- Responsive design (mobile, tablet, desktop)
+- Hero section with AI-generated abstract background images
+- About section with enhanced professional content
+- Skills section with styled chips/badges
+- Projects section with hover effects and grid layout
+- Contact section with email links
+- Smooth scrolling navigation
+- Mobile menu toggle
+- Modern CSS with 400+ lines of professional styling
+- Professional animations and transitions
+
 ## API Endpoints
 
 ### POST /api/generate-spec
@@ -130,6 +144,16 @@ Downloads the generated website as ZIP file.
 
 Health check endpoint.
 
+## Usage Workflow
+
+The typical workflow for generating a portfolio:
+
+1. **Generate Specification**: Call `/api/generate-spec` with user data (name, title, skills, projects, etc.)
+2. **Generate Assets**: Call `/api/generate-assets` with the project ID from step 1 to create images
+3. **Build Website**: Call `/api/build` with the project ID to compile everything into a ZIP file
+4. **Preview**: Visit the `previewUrl` from the build response to see your portfolio
+5. **Download**: Use the `downloadUrl` or visit `/download/{id}` to get the ZIP file
+
 ## Color Format Support
 
 Supports hex (`#FF5733`), RGB (`rgb(255, 87, 51)`), RGBA, HSL, named colors (`coral`, `teal`), and multiple colors (`"#6366F1, #8B5CF6"`). Invalid colors fallback to default `#22D3EE`.
@@ -146,6 +170,16 @@ Autofolio/
 │   └── requirements.txt
 └── README.md
 ```
+
+## Troubleshooting
+
+**API Key Issues**: Ensure your `.env` file has valid Gemini API keys with sufficient quota.
+
+**Port Already in Use**: Change the `PORT` in `.env` or stop the conflicting process.
+
+**Image Generation Fails**: Check API quota limits and ensure image generation models are enabled in your Gemini API settings.
+
+**Empty Generated Content**: Check server console logs for AI model errors or API rate limit messages.
 
 ## Team
 
