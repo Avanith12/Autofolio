@@ -2,6 +2,10 @@
 
 AI-powered portfolio website generator that creates professional, responsive portfolio websites using Google's Gemini AI. Generates complete HTML, CSS, JavaScript files and custom images ready for deployment.
 
+**Project Slides:** https://www.canva.com/design/DAG3H7YTqTA/wqUVtI6aija_UBImShD9ug/edit
+
+
+
 ## Prerequisites
 
 - Node.js (v18 or higher)
@@ -192,3 +196,9 @@ Autofolio/
 - Pranathi
 - Ila
 - Rami
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2025 Brainy Brunch
